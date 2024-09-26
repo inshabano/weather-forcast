@@ -31,6 +31,7 @@ searchInput.addEventListener('keypress', async function (event) {
         const temp = response.current.temp_c;
         const humidity = response.current.humidity;
         updateDom({city, region, country, temp, humidity}) 
+        searchInput.value="";
     }
 });
 function updateDom(data) {
